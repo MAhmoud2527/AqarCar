@@ -10006,11 +10006,13 @@ ul.cont-sections:after {
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
     line-height: 1;
+    text-align: center;
 }
 .counter-item .counter-item-ttl {
     font-size: 23px;
     color: #abc1d8;
     margin: 0 0 15px;
+    text-align: center;
 }
 
 @media only screen and (max-width : 991px) {
