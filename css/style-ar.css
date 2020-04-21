@@ -1884,31 +1884,26 @@ input:focus {
 
 /*Start goup */
 
-.up {
+/* Back to top button */
+.back-to-top {
     position: fixed;
-    bottom: 5px;
-    right: 5px;
-    z-index: 5000;
-    transition: all 2s;
-}
-
-.up a {
-    display: table;
+    display: none;
     background: #3357b4;
     color: #fff;
-    border-radius: 30px 30px 10px 10px;
-    text-decoration: none
-
+    padding: 6px 12px 9px 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    right: 15px;
+    bottom: 15px;
+    transition: all 0.5s; 
 }
-
-.up i {
-    display: none;
-    text-align: center;
-    margin: 20px;
-    transition: all 3s;
-    
+.back-to-top:hover{
+    color: #fff;
 }
-
+  
+  @media (max-width: 768px) {
+    .back-to-top {
+      bottom: 15px; } }
 
 /*End goup */
 
@@ -5806,7 +5801,7 @@ MENU 3
     height: 30px;
     margin: -14px 0 0;
     display: block;
-    width: 16px;
+    width: 20px;
     text-align: center;
 }
 .prop-i .prop-i-info dt .prop-i-info-icon:after {

@@ -15,26 +15,24 @@
 //     }
 // }
 /* Arrow*/
-var myButton = document.getElementById('goup');
-window.onscroll = function () {
-    
-    'use strict';
-    
-    if (window.pageYOffset >= 150)
-        {
-            
-            myButton.style.display = 'block';
-            
-        
-        } else {
-            
-            myButton.style.display = 'none';
-        }
-};
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+        $('.back-to-top').fadeIn('slow');
+    } else {
+        $('.back-to-top').fadeOut('slow');
+    }
+});
 
-$('.up').click(function(){
-    $('html, body').animate({scrollTop:0}, 'slow');
-}); 
+$('.back-to-top').click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1500);
+    return false;
+});
+
+
+
+
 
 "use strict";
 
@@ -54,7 +52,7 @@ jQuery(document).ready(function ($) {
         });
         absolute_pageResize();
     }
-    
+ 
     /*
      Single Property
      */
@@ -565,8 +563,8 @@ jQuery(document).ready(function ($) {
 
 
     if (jQuery().waypoint) {
-        jQuery('.counter-i').waypoint(function () {
-            jQuery('.counter-i-val').each(function () {
+        jQuery('.counter-item').waypoint(function () {
+            jQuery('.counter-item-val').each(function () {
                 var value = jQuery(this).data('value');
                 jQuery(this).countTo({from: 0, to: value, refreshInterval: 10, speed: 1000});
             });
@@ -575,7 +573,7 @@ jQuery(document).ready(function ($) {
             offset     : 'bottom-in-view'
         });
     } else {
-        jQuery(this).find('.counter-i-val').each(function () {
+        jQuery(this).find('.counter-item-val').each(function () {
             var value = jQuery(this).data('value');
             jQuery(this).countTo({from: 0, to: value, refreshInterval: 10, speed: 1000});
         });
@@ -666,6 +664,23 @@ jQuery(window).load(function(){
 
     }
 
+          
+// Nice Scroll function
+
+// $(function() {  
     
+//     $("body").niceScroll({
+//       cursorcolor: "rgb(251, 170, 37)",
+//       cursorborder: "0px",
+//       zindex: "9999",
+//       horizrailenabled:false,
+//       emulatetouch: true,
+//     cursordragontouch: true,
+//     });
+// })
+
+
 });
+
+
 })(jQuery);
