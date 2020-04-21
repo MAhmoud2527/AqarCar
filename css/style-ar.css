@@ -4123,6 +4123,7 @@ MENU 3
     background-position: center center;
     background-repeat: no-repeat;
     margin: 0 0 50px;
+    background-attachment: fixed;
 }
 .topblock-wrap .container {
     position: relative;
