@@ -62,15 +62,34 @@
             <li class="menu-item active">
                 <a href="#">دخول | تسجيل</a>
             </li>
+           
+            
         </ul>
     </nav><!--
     NO SPACE
     --><div class="h-right">
         <ul class="h-right-vert-aligner h-social">
-            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-            <li><a href="#"><span class="fa fa-youtube-play"></span></a></li>
-            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+            <div class="dropdown">
+            <span class="menu-item-has-children"><span class="fa fa-user"></span></span>
+            <div class="dropdown-content">
+                <a href="#">الحساب الشخصي</a>
+                <a href="#">السلة </a>
+                <a href="#">الاعدادات</a>
+                <a href="#">تسجيل الخروج</a>
+            </div>
+            </div>
+            <div class="dropdown">
+            <span class="menu-item-has-children"><span class="fa fa-bell"></span></span>
+            <span class='badge badge-warning' id='lblCartCount'> 5 </span>
+
+            </div>
+            <div class="dropdown">
+            <span class="menu-item-has-children"><span class="fa fa-globe"></span></span>
+            <div class="dropdown-content">
+                <a href="#">Arabic</a>
+                <a href="#">English</a>
+            </div>
+            </div>
         </ul>
     </div>
     <div class="mainmenu-btn-wrap" id="mainmenu-btn">
@@ -116,6 +135,9 @@
         </ul>
     </nav>
 </div>
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
 <div class="topblock-wrap" style="background-image: url(img/1/top2.jpg);">
     <div class="container topblock2">
 
@@ -159,12 +181,39 @@
                         <option value="4">الرحاب</option>
                     </select>
                 </li>
-                <li class="search2-status search2-status-1 active" data-search-tab="#search-tab-1">العقارات</li>
+                <li class="search2-status search2-status-0 active" data-search-tab="#search-tab-0">الكل</li>
+                <li class="search2-status search2-status-1" data-search-tab="#search-tab-1">العقارات</li>
                 <li class="search2-status" data-search-tab="#search-tab-2">السيارات</li>
                 <li class="search2-reset"><a href="#">اعادة ظبط</a></li>
             </ul>
             <div class="search2-tabs">
-                <form action="#" class="search-tab search2-status-tab active" id="search-tab-1">
+                <form action="#" class="search-tab search2-status-tab active" id="search-tab-0">
+                    <div class="search2-main">
+                        <div class="search2-col search2-type">
+                              <div class="form-group row">
+                                <div class="col-lg-2 col-sm-12">
+                                    <select class="chosen-select">
+                                        <option selected> نوع البحث</option>
+                                        <option >عقارات</option>
+                                        <option>سيارات</option>
+                                </select>
+                                </div>
+                                <div class="col-lg-3 col-sm-12">
+                                    <select class="chosen-select">
+                                        <option selected> للبيع </option>
+                                        <option >للايجار</option>
+                                </select>
+                                </div>
+                                <div class="col-lg-7 col-sm-12" style="padding: 0;">
+                                    <input type="text" class="form-control" placeholder="ابحث هنا ...">
+
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+
+                </form>
+                <form action="#" class="search-tab search2-status-tab" id="search-tab-1">
                     <div class="search2-main">
                         <div class="search2-col search2-type">
                             <label class="search2-label">
@@ -266,33 +315,38 @@
                                 <span class="search2-label-ico"><!--   NO SPACE --><img src="img/ico-price.png" alt=""><!-- NO SPACE --></span>
                                 متوسط السعر
                             </label>
-                            <input
-                                type="text"
-                                class="range-slider"
-                                data-min="56700"
-                                data-max="4000000"
-                                data-from="278400"
-                                data-to="3500000"
-                                data-type="double"
-                                data-grid="false"
-                                data-prefix="ُEGP"
-                            >
+                            <div class="form-group row">
+                            
+                                <div class="col-xs-6">
+                                    <p class="input-group">
+                                      <input type="text" id="from-price" class="form-control" placeholder="من"/>
+                                    </p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <p class="input-group">
+                                      <input type="text" id="to-price" class="form-control" placeholder="الى"/>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <div class="search2-col search2-square">
                             <label class="search2-label">
                                 <span class="search2-label-ico"><!--   NO SPACE --><img src="img/ico-area.png" alt=""><!-- NO SPACE --></span>
                                 مساحة العقار
                             </label>
-                            <input
-                                type="text"
-                                class="range-slider"
-                                data-min="70"
-                                data-max="4400"
-                                data-from="1100"
-                                data-to="3300"
-                                data-type="double"
-                                data-grid="false"
-                            >
+                            <div class="form-group row">
+                            
+                                <div class="col-xs-6">
+                                    <p class="input-group">
+                                      <input type="text" id="from-space" class="form-control" placeholder="من"/>
+                                    </p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <p class="input-group">
+                                      <input type="text" id="to-space" class="form-control" placeholder="الى"/>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -357,33 +411,38 @@
                                 <span class="search2-label-ico"><!--   NO SPACE --><img src="img/ico-price.png" alt=""><!-- NO SPACE --></span>
                                 متوسط السعر
                             </label>
-                            <input
-                                type="text"
-                                class="range-slider"
-                                data-min="56700"
-                                data-max="4000000"
-                                data-from="278400"
-                                data-to="3500000"
-                                data-type="double"
-                                data-grid="false"
-                                data-prefix="EGP"
-                            >
+                            <div class="form-group row">
+                            
+                                <div class="col-xs-6">
+                                    <p class="input-group">
+                                      <input type="text" id="from-price-car" class="form-control" placeholder="من"/>
+                                    </p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <p class="input-group">
+                                      <input type="text" id="to-price-car" class="form-control" placeholder="الى"/>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <div class="search2-col search2-year">
                             <label class="search2-label">
                                 <span class="search2-label-ico"><!--   NO SPACE --><img src="img/ico-year.png" alt=""><!-- NO SPACE --></span>
                                 السنة
                             </label>
-                            <input
-                                type="text"
-                                class="range-slider"
-                                data-min="1994"
-                                data-max="2020"
-                                data-from="2001"
-                                data-to="2017"
-                                data-type="double"
-                                data-grid="false"
-                            >
+                            <div class="form-group row">
+                            
+                                <div class="col-xs-6">
+                                    <p class="input-group">
+                                      <input type="text" id="from-space-car" class="form-control" placeholder="من"/>
+                                    </p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <p class="input-group">
+                                      <input type="text" id="to-space-car" class="form-control" placeholder="الى"/>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         
                    
@@ -1227,17 +1286,7 @@
         <button class="prop-items-more">عرض المزيد </button>
 </div>
 
-
-<div class="modalform">
-    <form action="#" method="POST" class="form-validate">
-        <p class="modalform-ttl">Contact Us</p>
-        <input type="text" placeholder="Your name" data-required="text" name="name">
-        <input type="text" placeholder="Your phone" data-required="text" name="phone">
-        <input type="text" placeholder="Your email" data-required="text" data-required-email="email" name="email">
-        <button class="btn1" type="submit">ارسال</button>
-    </form>
-</div>
-
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927755.0521049667!2d47.383040826521466!3d24.725398072981193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2z2KfZhNix2YrYp9i2INin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2seg!4v1587908048304!5m2!1sar!2seg" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
 <footer class="site-footer2">
     <div class="container footer2-top">
         <div class="row">
@@ -1283,7 +1332,24 @@
         </div>
     </div>
 </footer>
-
+<!-- Fixed Social Bar -->
+  <ul id="social-sidebar">
+    <li>
+      <a class="twitter"><i class="fa fa-twitter"></i><span>Tweeter</span></a>
+    </li>
+    <li>
+      <a class="facebook"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+    </li>
+    <li>
+      <a class="gplus"><i class="fa fa-google"></i><span>Google</span></a>
+    </li>
+    <li>
+      <a class="youtube"><i class="fa fa-youtube"></i><span>Youtube</span></a>
+    </li>
+    <li>
+      <a class="linkedin"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
+    </li>
+  </ul>
 
 <script src="js/jquery-1.12.3.min.js"></script>
 <!-- jQuery UI - DatePicker -->
@@ -1293,7 +1359,6 @@
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.countTo.js"></script>
 <script src="js/ion.rangeSlider.min.js"></script>
-<script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/fancybox/fancybox.js"></script>
 <script src="js/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
 <script src="js/isotope.min.js"></script>
