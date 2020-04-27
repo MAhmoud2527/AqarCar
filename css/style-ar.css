@@ -12509,7 +12509,11 @@ ul.items-filtered {
   }
   
   div.scrollmenu a:hover {
+    /* background-color: #f2a641; */
+  }
+  div.scrollmenu a:active{
     background-color: #f2a641;
+
   }
   .logo_header{
     width: 100%;
