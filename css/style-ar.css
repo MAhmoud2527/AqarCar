@@ -10735,6 +10735,8 @@ body .color-grey {
     transition: all 0.2s;
     padding: 0 14px;
     font-size: 15px;
+    font-family: cairo;
+
 }
 .modalform input[type=text]::-webkit-input-placeholder {
     color: #838e9d;
@@ -10754,6 +10756,7 @@ body .color-grey {
     min-width: 100%;
     margin: 0 0 20px 0;
     border: 1px solid #e0e4f6;
+    font-family: cairo;
     display: block;
     min-height: 170px;
     height: 170px;
@@ -11244,13 +11247,13 @@ body .color-grey {
     text-transform: uppercase;
     transition: background-color 0.2s;
     cursor: pointer;
-    background-color: #87cefa;
+    background-color: #dfe2ec;
     border: none;
     font-family: cairo;
 }
 .f2-subscribe form button:hover,
 .f2-subscribe form input[type=submit]:hover {
-    background-color: #f3a249;
+    background-color: #87cefa;
 }
 .f2-subscribe form button:before {
     display: block;
@@ -11258,8 +11261,8 @@ body .color-grey {
     content: '';
     bottom: 0;
     left: -20px;
-    border-right: 10px solid #87cefa;
-    border-bottom: 20px solid #87cefa;
+    border-right: 10px solid #dfe2ec;
+    border-bottom: 20px solid #dfe2ec;
     border-left: 10px solid transparent;
     border-top: 20px solid transparent;
     transition: border-color 0.2s;
@@ -11270,19 +11273,19 @@ body .color-grey {
     content: '';
     bottom: 0;
     right: -20px;
-    border-left: 10px solid #87cefa;
-    border-top: 20px solid #87cefa;
+    border-left: 10px solid #dfe2ec;
+    border-top: 20px solid #dfe2ec;
     border-right: 10px solid transparent;
     border-bottom: 20px solid transparent;
     transition: border-color 0.2s;
 }
 .f2-subscribe form button:hover:before {
-    border-right: 10px solid #f3a249;
-    border-bottom: 20px solid #f3a249;
+    border-right: 10px solid #87cefa;
+    border-bottom: 20px solid #87cefa;
 }
 .f2-subscribe form button:hover:after {
-    border-left: 10px solid #f3a249;
-    border-top: 20px solid #f3a249;
+    border-left: 10px solid #87cefa;
+    border-top: 20px solid #87cefa;
 }
 .footer2-bottom {
     border-top: 1px solid #e1e5ee;
