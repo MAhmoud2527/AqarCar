@@ -12450,7 +12450,7 @@ ul.items-filtered {
   
   .progress-bar {
     height: 8px;
-    background: #dfe2ec;
+    background: #48494a;
     width: 0%;
   }
   
@@ -12509,7 +12509,7 @@ ul.items-filtered {
   }
   
   div.scrollmenu a:hover {
-    /* background-color: #f2a641; */
+    background-color: #f2a641;
   }
   div.scrollmenu a:active{
     background-color: #f2a641;
@@ -12518,7 +12518,7 @@ ul.items-filtered {
   .logo_header{
     width: 100%;
     text-align: center;
-    margin: 0 58px;
+    margin-right: 70px;
     font-size: 26px;
     color: #fff;
   }
