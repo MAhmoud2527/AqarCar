@@ -2316,23 +2316,24 @@ input:focus {
 
 body .btn1 {
     border: none;
-    background-color: #4258b0;
+    background-color: #ddd;
     transition: background-color 0.2s;
     font-weight: 500;
     font-size: 14px;
-    color: #ffffff;
+    color: #000;
     text-transform: uppercase;
     letter-spacing: 0.01em;
     border-radius: 3px;
     text-align: center;
     padding: 10px 37px;
+    font-family: cairo;
     box-shadow: 0 6px 18px 0 rgba(66,88,176,0.2);
     text-decoration: none;
 }
 body .btn1:hover {
     color: #ffffff;
     text-decoration: none;
-    background-color: #f3a249;
+    background-color: #87cefa;
 }
 
 body .btn2 {
@@ -4908,6 +4909,7 @@ MENU 3
 }
 .topblock2 .search2 {
     margin: 50px 0 -30px;
+    z-index: 0;
 }
 .search2:after {
     clear: both;
@@ -11567,6 +11569,7 @@ body .mainttl {
     color: #737f8f;
     line-height: 1.2;
     letter-spacing: 0.01em;
+    z-index: 0;
 }
 .mainttl * {
     line-height: 1.2;
@@ -12327,18 +12330,21 @@ ul.items-filtered {
 #social-sidebar a[class*="facebook"] span,
 #social-sidebar a[class*="facebook"] span:before {background: #3B5998;}
 
-#social-sidebar a[class*="gplus"]:hover,
-#social-sidebar a[class*="gplus"] span,
-#social-sidebar a[class*="gplus"] span:before {background: #E34429;}
+#social-sidebar a[class*="whatsapp"]:hover,
+#social-sidebar a[class*="whatsapp"] span,
+#social-sidebar a[class*="whatsapp"] span:before {background: #4dc247;}
 
-#social-sidebar a[class*="youtube"]:hover,
-#social-sidebar a[class*="youtube"] span,
-#social-sidebar a[class*="youtube"] span:before {background: #ff0000;}
+#social-sidebar a[class*="instagram"]:hover,
+#social-sidebar a[class*="instagram"] span,
+#social-sidebar a[class*="instagram"] span:before {background: #e95950;}
 
-#social-sidebar a[class*="linkedin"]:hover,
-#social-sidebar a[class*="linkedin"] span,
-#social-sidebar a[class*="linkedin"] span:before {background: #007bb5;}
+#social-sidebar a[class*="snapchat"]:hover,
+#social-sidebar a[class*="snapchat"] span,
+#social-sidebar a[class*="snapchat"] span:before {background: #dddb1a;}
 
+#social-sidebar a[class*="message"]:hover,
+#social-sidebar a[class*="message"] span,
+#social-sidebar a[class*="message"] span:before {background: #87cefa;}
 .input-group-addon{
         padding: 0;
         font-size: 14px;
