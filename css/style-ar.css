@@ -10102,8 +10102,8 @@ body .color-grey {
     margin: 0 0 35px !important;
     padding: 0;
     position: relative;
-    background: #f8fafc;
-    border: 1px solid #e0e4f6;
+    /* background: #f8fafc;
+    border: 1px solid #e0e4f6; */
     list-style: none !important;
 }
 .absolute-tabs:after {
@@ -10114,7 +10114,7 @@ body .color-grey {
 .absolute-tabs li {
     margin: 0;
     padding: 0;
-    float: left;
+    float: right;
     list-style: none !important;
 }
 .absolute-tabs li a {
@@ -10126,6 +10126,7 @@ body .color-grey {
     font-weight: 500;
     color: #1d253f;
     border: none;
+    text-align: center;
 }
 .absolute-tabs li a:hover {
     color: #3357b4;
@@ -10134,8 +10135,8 @@ body .color-grey {
 .absolute-tabs li a.active {
     color: #fff;
     background: #1d253f;
-    margin: -1px 0;
-    padding: 15px 22px 14px;
+    /* margin: -1px 0;
+    padding: 15px 22px 14px; */
 }
 .absolute-tab-cont {
     overflow: hidden;
@@ -10377,23 +10378,6 @@ body .color-grey {
 /* fr-pop-tab more */
 
 
-@media only screen and (max-width : 767px) {
-    .absolute-tabs {
-        display: none;
-    }
-    .absolute-tab-mob {
-        display: block;
-    }
-    .absolute-tab-mob.active {
-        color: #1d253f;
-    }
-    .absolute-tab-mob.active:before {
-        background: #1d253f;
-    }
-    .absolute-tabs li.absolute-tabs-more {
-        display: none !important;
-    }
-}
 
 
 /*----------------------------------
@@ -12474,4 +12458,63 @@ ul.items-filtered {
     padding: 100px 0;
     margin: 50px auto 0 auto;
     width: 80%;
+  }
+
+
+#search-tab-2 .car-Logo img{
+    width: 60px;
+    height: 60px;
+}
+#search-tab-2 .CatTitle{
+    text-align: center;
+    width: 100%;
+    padding: 0 13px;
+    font-size: 19px;
+    font-family: cairo;
+    font-weight: 600;
+}
+#search-tab-2 .car_div{
+    text-align: center;
+}
+#search-tab-2 .car_div:hover{
+    background-color: #ddd;
+}
+.iconSearch{
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+}
+.ex1 {
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    margin: 20px 0;
+    padding: 0 20px;
+  }
+
+
+  .scrollmenu {
+    background-color: #1d253f;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0 60px;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #f2a641;
+  }
+  .logo_header{
+    width: 100%;
+    text-align: center;
+    margin: 0 58px;
+    font-size: 26px;
+    color: #fff;
   }
