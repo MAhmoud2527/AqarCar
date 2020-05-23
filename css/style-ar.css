@@ -2897,7 +2897,7 @@ MENU 3
 }
 .mainmenu3 > ul > li > a {
     display: block;
-    padding: 13px 20px;
+    padding: 13px 0px;
     color: #323946;
     transition: color 0.2s;
     position: relative;
@@ -4037,6 +4037,7 @@ MENU 2
     color: #323946;
     white-space: nowrap;
     font-weight: 400;
+    text-align: center;
 }
 .submenu1 > ul > li ul > li:first-child {
     border-radius: 4px 4px 0 0;
@@ -4124,6 +4125,8 @@ MENU 3
     margin: 0 0 50px;
     background-attachment: fixed;
     border-bottom: solid 15px #87cefa;
+    z-index: 2;
+
 }
 .topblock-wrap .container {
     position: relative;
@@ -8304,12 +8307,12 @@ PADDING IN MOBILE
     color: #f3a249;
 }
 .post-cont .post-share {
-    float: right;
+    /* float: right; */
     margin: 58px 0 0 0;
     padding: 0;
     list-style: none;
-    max-width: 74%;
-    text-align: right;
+    /* max-width: 74%; */
+    text-align: center;
 }
 .post-cont .post-share li {
     display: inline-block;
@@ -11431,7 +11434,7 @@ ul.b-crumbs > li {
     line-height: 1.42857143;
     list-style: none;
 }
-ul.b-crumbs > li:after {
+ul.b-crumbs > li:before {
     position: absolute;
     font-family: FontAwesome;
     content: '\f105';
@@ -11440,7 +11443,7 @@ ul.b-crumbs > li:after {
     display: block;
     color: #858d9b;
 }
-ul.b-crumbs > li:last-child:after {
+ul.b-crumbs > li:first-child:before {
     display: none;
 }
 ul.b-crumbs > li a {
@@ -12530,3 +12533,7 @@ ul.items-filtered {
     font-size: 26px;
     color: #fff;
   }
+  .irs-min, .irs-max , .irs-from , .irs-to{
+    direction: initial;
+    word-spacing: -2px;
+}

@@ -3,7 +3,8 @@
 
     <head>
 
-        <meta charset="UTF-8">
+        <!-- <meta charset="UTF-8"> -->
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>AqarCar | Home</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,27 +48,38 @@
             </a>
             <nav class="submenu1 mainmenu3">
                 <ul>
-                    <li class="menu-item">
-                        <a href="index.html">الرئيسية</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">العقارات</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">السيارات</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">من نحن</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">المدونة</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">اتصل بنا</a>
-                    </li>
-                    <li class="menu-item active">
-                        <a href="#">دخول | تسجيل</a>
-                    </li>
+                   <li class="menu-item">
+                            <a href="index.html">اعلانات مميزة</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">تسهيلات</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">حلول تسويقيه</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="estateCalculator.html">حاسبة التمويل العقارى</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">المكاتب والمعارض</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">اخري</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">العروض </a></li>
+                                <li><a href="#">أقوى الاعلانات</a></li>
+                                <li><a href="#">العقود </a></li>
+                                <li><a href="#">سيارات </a></li>
+                                <li><a href="#">عقارات </a></li>
+                                <li><a href="#">خدمات السيارات </a></li>
+                                <li><a href="#">اتصل بنا </a></li>
+                                <li><a href="#">من نحن </a></li>
+
+                            </ul>
+                        </li>
+                        <li class="menu-item active">
+                            <a href="#"> اعلان جديد</a>
+                        </li>
 
 
                 </ul>
@@ -120,25 +132,35 @@
                 <ul>
                     <ul>
                         <li class="menu-item">
-                            <a href="index.html">الرئيسية</a>
+                            <a href="index.html">اعلانات مميزة</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">العقارات</a>
+                            <a href="#">تسهيلات</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">السيارات</a>
+                            <a href="#">حلول تسويقيه</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">من نحن</a>
+                            <a href="estateCalculator.html">حاسبة التمويل العقارى</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">المدونة</a>
+                            <a href="#">المكاتب والمعارض</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="" style="padding-top: 2px; padding-bottom: 2px;">أخرى <i class="fa fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="#">العروض </a></li>
+                                <li><a href="#">أقوى الاعلانات</a></li>
+                                <li><a href="#">العقود </a></li>
+                                <li><a href="#">سيارات </a></li>
+                                <li><a href="#">عقارات </a></li>
+                                <li><a href="#">خدمات السيارات </a></li>
+                                <li><a href="#">اتصل بنا </a></li>
+                                <li><a href="#">من نحن </a></li>
+                            </ul>
                         </li>
                         <li class="menu-item">
-                            <a href="#">اتصل بنا</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#"> دخول | تسجيل</a>
+                            <a href="#"> أعلان جديد</a>
                         </li>
 
 
@@ -225,68 +247,35 @@
                                     <label class="search2-label">
                                         <span class="search2-label-ico"><!--   NO SPACE --><img
                                                 src="img/ico-garage.png" alt=""><!-- NO SPACE --></span>
-                                        الحى
+                                        نوع الايجار
                                     </label>
                                     <select class="chosen-select">
-                                        <option selected> الحى</option>
-                                        <option>فيصل</option>
-                                        <option>المهندسين</option>
-                                        <option>السادس من اكتوبر</option>
-                                        <option>عباس العقاد</option>
+                                        <option selected> سنوي</option>
+                                        <option>شهرى</option>
+                                        <option>يومي</option>
 
                                     </select>
                                 </div>
-                                <div class="search2-col search2-bath">
+                                
+                                <div class="search2-col search2-type">
                                     <label class="search2-label">
-                                        <span class="search2-label-ico"><!--   NO SPACE --><img
-                                                src="img/ico-bed.png" alt=""><!-- NO SPACE --></span>
-                                        عدد الغرف
+                                        <span class="search2-label-ico"><!--   NO SPACE --><ion-icon
+                                                name="card-outline"></ion-icon><!-- NO SPACE --></span>
+                                         نوع 
                                     </label>
-                                    <ul class="search2-values">
-                                        <li>
-                                            <label class="search2-label-val"><input
-                                                    type="radio"
-                                                    name="search2-bath-1"
-                                                    value="1"
-                                                    class="styler-input"> <span><i>1</i></span></label>
-                                        </li>
-                                        <li>
-                                            <label class="search2-label-val"><input
-                                                    type="radio"
-                                                    name="search2-bath-1"
-                                                    value="2"
-                                                    class="styler-input"> <span><i>2</i></span></label>
-                                        </li>
-                                        <li>
-                                            <label class="search2-label-val"><input
-                                                    type="radio"
-                                                    name="search2-bath-1"
-                                                    value="3"
-                                                    class="styler-input"
-                                                    checked> <span><i>3</i></span></label>
-                                        </li>
-                                        <li>
-                                            <label class="search2-label-val"><input
-                                                    type="radio"
-                                                    name="search2-bath-1"
-                                                    value="4"
-                                                    class="styler-input"> <span><i>4</i></span></label>
-                                        </li>
-                                        <li>
-                                            <label class="search2-label-val"><input
-                                                    type="radio"
-                                                    name="search2-bath-1"
-                                                    value="5"
-                                                    class="styler-input"> <span><i>5
-                                                        +</i></span></label>
-                                        </li>
-                                    </ul>
+                                    <select class="chosen-select">
+                                        <option> الكل</option>
+                                        <option selected>عزاب</option>
+                                        <option>عائلة</option>
+
+                                    </select>
+
                                 </div>
                                 <div class="search2-col search2-floors">
                                     <label class="search2-label">
                                         <span class="search2-label-ico"><!--   NO SPACE --><img
                                                 src="img/ico-floor.png" alt=""><!-- NO SPACE --></span>
-                                        الدور
+                                        عدد الغرف
                                     </label>
                                     <select class="chosen-select">
                                         <option>الكل</option>
@@ -311,78 +300,60 @@
                                     </select>
 
                                 </div>
+
                                 <div class="search2-col search2-type">
                                     <label class="search2-label">
                                         <span class="search2-label-ico"><!--   NO SPACE --><ion-icon
                                                 name="map-outline"></ion-icon><!-- NO SPACE --></span>
-                                        الاطلالة
+                                        نوع العقار
                                     </label>
                                     <select class="chosen-select">
                                         <option selected> الكل</option>
-                                        <option>شارع فرعي</option>
-                                        <option>شارع رئيسي</option>
-                                        <option>حديقة</option>
-                                        <option>ناصية</option>
-                                        <option>البحر | النيل</option>
-                                        <option>لاجون فيو</option>
-
+                                        <option>فيلا </option>
+                                        <option>شقة </option>
                                     </select>
                                 </div>
+                                
                             </div>
 
                             <div class="search2-advanced">
                                 <div class="search2-col search2-price">
                                     <label class="search2-label">
-                                        <span class="search2-label-ico"><!--   NO SPACE --><img
-                                                src="img/ico-price.png" alt=""><!-- NO SPACE --></span>
+                                        <span class="search2-label-ico"><!--   NO SPACE --><img src="img/ico-price.png" alt=""><!-- NO SPACE --></span>
                                         متوسط السعر
                                     </label>
-                                    <div class="form-group row">
-
-                                        <div class="col-xs-6">
-                                            <p class="input-group">
-                                                <input type="text"
-                                                    id="from-price"
-                                                    class="form-control"
-                                                    placeholder="من" />
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <p class="input-group">
-                                                <input type="text" id="to-price"
-                                                    class="form-control"
-                                                    placeholder="الى" />
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <input
+                                        type="text"
+                                        class="range-slider"
+                                        data-min="100"
+                                        data-max="4000"
+                                        data-from="2250"
+                                        data-to="3652"
+                                        data-type="double"
+                                        data-grid="false"
+                                        data-prefix=" EGP "
+                                    >
                                 </div>
-                                <div class="search2-col search2-square">
+                                <div class="search2-col search2-price">
                                     <label class="search2-label">
-                                        <span class="search2-label-ico"><!--   NO SPACE --><img
-                                                src="img/ico-area.png" alt=""><!-- NO SPACE --></span>
-                                        مساحة العقار
+                                        <span class="search2-label-ico"><!--   NO SPACE --><img src="img/ico-price.png" alt=""><!-- NO SPACE --></span>
+                                         مساحة العقار
                                     </label>
-                                    <div class="form-group row">
-
-                                        <div class="col-xs-6">
-                                            <p class="input-group">
-                                                <input type="text"
-                                                    id="from-space"
-                                                    class="form-control"
-                                                    placeholder="من" />
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <p class="input-group">
-                                                <input type="text" id="to-space"
-                                                    class="form-control"
-                                                    placeholder="الى" />
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <input
+                                        type="text"
+                                        class="range-slider"
+                                        data-min="90"
+                                        data-max="10000"
+                                        data-from="2250"
+                                        data-to="3652"
+                                        data-type="double"
+                                        data-grid="false"
+                                        data-prefix=" M "
+                                    >
                                 </div>
+                               
+                              
                             </div>
-
                             <div class="search2-features">
                                 <label class="cf-xs-6 cf-sm-4 cf-lg-3 col-xs-6
                                     col-sm-4 col-md-3">
@@ -724,53 +695,43 @@
 
                                 </div>
                             </div>
-                            <div class="search2-main">
-                                <div class="search2-col search2-type">
+                            
+                            <div class="search2-advanced">
+                                <div class="search2-col search2-price">
                                     <label class="search2-label">
-                                        <span class="search2-label-ico"><!--   NO SPACE --><img
-                                                src="img/ico-year.png" alt=""><!-- NO SPACE --></span>
-                                        السنة
-                                    </label>
-                                    <select class="chosen-select">
-                                        <option> 2017 </option>
-                                        <option>2016 </option>
-                                        <option>2015 </option>
-                                        <option>2014 </option>
-                                        <option>2013 </option>
-                                        <option>2012 </option>
-                                        <option>2011 </option>
-                                        <option>2010 </option>
-                                        <option> 2009</option>
-
-                                    </select>
-                                </div>
-                                <div class="search2-col search2-type">
-                                    <label class="search2-label">
-                                        <span class="search2-label-ico"><!--   NO SPACE --><img
-                                                src="img/ico-year.png" alt=""><!-- NO SPACE --></span>
+                                        <span class="search2-label-ico"><!--   NO SPACE --><img src="img/ico-price.png" alt=""><!-- NO SPACE --></span>
                                         متوسط السعر
                                     </label>
-                                    <div class="form-group row">
-
-                                        <div class="col-xs-6">
-                                            <p class="input-group">
-                                                <input type="text"
-                                                    id="from-price-car"
-                                                    class="form-control"
-                                                    placeholder="من" />
-                                            </p>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <p class="input-group">
-                                                <input type="text"
-                                                    id="to-price-car"
-                                                    class="form-control"
-                                                    placeholder="الى" />
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <input
+                                        type="text"
+                                        class="range-slider"
+                                        data-min="100"
+                                        data-max="4000"
+                                        data-from="2250"
+                                        data-to="3652"
+                                        data-type="double"
+                                        data-grid="false"
+                                        data-prefix=" EGP "
+                                    >
                                 </div>
-
+                               
+                                <div class="search2-col search2-year">
+                                    <label class="search2-label">
+                                        <span class="search2-label-ico"><!--   NO SPACE --><img src="img/ico-year.png" alt=""><!-- NO SPACE --></span>
+                                        السنة
+                                    </label>
+                                    <input
+                                    type="text"
+                                    class="range-slider"
+                                    data-min="1980"
+                                    data-max="2019"
+                                    data-from="2007"
+                                    data-to="2015"
+                                    data-type="double"
+                                    data-grid="false"
+                                    >
+                                </div>
+                                
                             </div>
 
                         </form>
