@@ -6508,8 +6508,8 @@ button.prop-items-more:hover {
     display: block;
 }
 .prop-main-atts dt {
-    float: left;
-    padding: 3px 10px 0 30px;
+    float: right;
+    padding: 3px 20px 0 30px;
     font-size: 13px;
     text-transform: uppercase;
     color: #747f8f;
@@ -6518,7 +6518,7 @@ button.prop-items-more:hover {
 }
 .prop-main-atts dt .prop-i-info-icon {
     position: absolute;
-    left: 0;
+    right: 0;
     top: 50%;
     height: 30px;
     margin: -14px 0 0;
@@ -6541,7 +6541,7 @@ button.prop-items-more:hover {
     height: auto;
 }
 .prop-main-atts dd {
-    float: left;
+    float: right;
     color: #87cefa;
     margin: 0 0 17px;
     font-size: 16px;
@@ -6612,13 +6612,13 @@ button.prop-items-more:hover {
     top: auto;
 }
 .prop-cont .prop-cont-bottom {
-    padding: 29px 210px 0 0;
+    padding: 29px 0 0 210px;
     position: relative;
 }
 .prop-cont .prop-cont-buttons {
     position: absolute;
     top: 39px;
-    right: 0;
+    left: 0;
 }
 .prop-cont .prop-wishlist {
 
@@ -6644,7 +6644,7 @@ button.prop-items-more:hover {
     background-color: #fff;
     border: 1px solid #e1e5ee;
     transition: background-color 0.2s;
-    margin: 0 17px 0 0;
+    margin: 0 17px 0 17px;
 }
 .prop-cont .prop-print:hover {
     background-color: #f3f4f7;
@@ -6852,13 +6852,13 @@ button.prop-items-more:hover {
     color: #747f8f;
     padding: 3px 10px 0 0;
     margin: 0 0 18px;
-    clear: left;
+    clear: right;
     width: 46%;
-    float: left;
+    float: right;
 }
 .prop-atts dl dd {
     width: 54%;
-    float: left;
+    float: right;
     font-size: 16px;
     color: #323946;
     margin: 0 0 18px;
@@ -6907,7 +6907,7 @@ button.prop-items-more:hover {
     vertical-align: middle;
     display: inline-block;
     width: 20%;
-    padding: 5px 10px 5px 32px;
+    padding: 5px 50px 5px 32px;
     position: relative;
     font-size: 13px;
     font-weight: 500;
@@ -6967,7 +6967,7 @@ button.prop-items-more:hover {
         clear: none;
     }
     .prop-main .prop-main-atts dt:nth-of-type(3n+1) {
-        clear: left;
+        clear: right;
     }
     .prop-main .prop-main-atts dd {
         width: 17.33333%;
@@ -7030,7 +7030,7 @@ button.prop-items-more:hover {
         clear: none;
     }
     .prop-main .prop-main-atts dt:nth-of-type(2n+1) {
-        clear: left;
+        clear: right;
     }
     .prop-main .prop-main-atts dd {
         width: 26%;
@@ -7200,7 +7200,7 @@ button.prop-items-more:hover {
     .prop-cont .prop-main-atts dt,
     .prop-main .prop-main-atts dt {
         width: 48%;
-        clear: left;
+        clear: right;
     }
     .prop-cont .prop-main-atts dd,
     .prop-main .prop-main-atts dd {
@@ -7592,19 +7592,19 @@ PADDING IN MOBILE
     margin: 0 0 15px;
 }
 .agent-detail .agent-detail-info dt {
-    float: left;
+    float: right;
     width: 39%;
-    padding: 3px 10px 0 30px;
+    padding: 3px 27px 0 30px;
     font-size: 13px;
     text-transform: uppercase;
     color: #838e9d;
     position: relative;
     margin: 0 0 18px;
-    clear: left;
+    clear: right;
 }
 .agent-detail .agent-detail-info dt .agent-detail-info-icon {
     position: absolute;
-    left: 0;
+    right: 0;
     top: 50%;
     height: 30px;
     margin: -14px 0 0;
@@ -7662,7 +7662,7 @@ PADDING IN MOBILE
     margin: 0 43px 15px 0;
 }
 .agent-detail .agent-detail-social li:last-child {
-    margin-right: 0;
+    /* margin-right: 0; */
 }
 .agent-detail .agent-detail-social li a {
     color: #87cefa;
@@ -12536,4 +12536,8 @@ ul.items-filtered {
   .irs-min, .irs-max , .irs-from , .irs-to{
     direction: initial;
     word-spacing: -2px;
+}
+.agent-detail-img{
+    background-size: cover;
+    padding: 20px ;
 }
