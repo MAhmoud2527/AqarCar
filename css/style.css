@@ -4664,7 +4664,7 @@ button.prop-items-more:hover {
 }
 .prop-main-loc {
     color: #87cefa;
-    margin: 0 0 7px;
+    margin: 10px 0 7px;
     font-size: 16px;
 }
 .prop-main-loc a {
@@ -6619,6 +6619,8 @@ PADDING IN MOBILE
     min-width: 110px;
     padding: 0 15px;
     height: 40px;
+    background: #f3a249;
+
 }
 .post-comments-form button:before {
     display: block;
@@ -6626,8 +6628,8 @@ PADDING IN MOBILE
     content: '';
     bottom: 0;
     left: -20px;
-    border-right: 10px solid #87cefa;
-    border-bottom: 20px solid #87cefa;
+    border-right: 10px solid #f3a249;
+    border-bottom: 20px solid #f3a249;
     border-left: 10px solid transparent;
     border-top: 20px solid transparent;
 }
@@ -6637,8 +6639,8 @@ PADDING IN MOBILE
     content: '';
     bottom: 0;
     right: -20px;
-    border-left: 10px solid #87cefa;
-    border-top: 20px solid #87cefa;
+    border-left: 10px solid #f3a249;
+    border-top: 20px solid #f3a249;
     border-right: 10px solid transparent;
     border-bottom: 20px solid transparent;
 }
