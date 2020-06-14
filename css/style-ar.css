@@ -8207,7 +8207,7 @@ PADDING IN MOBILE
 }
 .post-slider + .maincont,
 .post-img + .maincont {
-    margin-top: -40px;
+    margin-top: -240px;
     position: relative;
     z-index: 1;
 }
@@ -8233,7 +8233,7 @@ PADDING IN MOBILE
 }
 .post-top .post-date {
     display: block;
-    float: right;
+    float: left;
     text-transform: uppercase;
     font-size: 13px;
     color: #767e8d;
@@ -8256,7 +8256,7 @@ PADDING IN MOBILE
     display: block;
 }
 .post-cont .post-author {
-    float: left;
+    float: right;
     margin: 38px 1% 0 0;
     font-size: 13px;
     color: #858d9b;
@@ -8268,7 +8268,7 @@ PADDING IN MOBILE
     display: block;
 }
 .post-cont .post-author img {
-    float: left;
+    float: right;
     display: block;
     margin: 0 27px 10px 0;
     width: 80px;
@@ -8280,9 +8280,12 @@ PADDING IN MOBILE
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
+    /* text-align: left; */
+} 
 .post-cont .post-author a {
     border: none;
+    float: right;
+    margin: 0px 0 0 14px;
 }
 .post-cont .post-author .post-author-type {
     margin: 13px 0 4px;
@@ -8382,6 +8385,7 @@ PADDING IN MOBILE
     color: #838e9d;
     width: 100%;
     display: block;
+    font-family: cairo;
 }
 .post-comments-form textarea:focus {
 
@@ -9109,7 +9113,7 @@ p.gallery-grid-more a.loading {
     color: #f3a249;
 }
 .widget-categories ul li .count {
-    float: right;
+    float: left;
     color: #67676b;
     margin: 0 0 0 7px;
 }
@@ -9328,6 +9332,7 @@ body .color-grey {
     border-bottom: 1px solid #e0e4f6;
     padding: 0 0 7px;
     margin: 0 0 10px;
+    text-align: justify;
 }
 .pricing-table .pricing-table-desc p:last-child {
     border-bottom: none;
@@ -9358,7 +9363,7 @@ body .color-grey {
 }
 .pricing-table.style_2 h3 {
     color: #fff;
-    background: #1d253f;
+    background: linear-gradient(45deg, #39cfbf, #83c7f6);
     font-size: 20px;
     margin: -1px -20px 24px;
     padding: 22px 19px 21px;
@@ -9375,7 +9380,7 @@ body .color-grey {
 .pricing-table.style_2 .pricing-table-desc {
     border-top: 1px solid #e0e4f6;
     padding-top: 13px;
-    margin: 0 0 22px;
+    margin: 0 9px 22px;
 }
 .pricing-table.style_2 .pricing-table-action {
     margin: 0 -20px -1px;
@@ -12619,7 +12624,7 @@ input[type="file"] {
     padding: 0;
     padding-right: 10px;
     height: 40px;
-    text-align: right;
+    text-align: left;
     font-family: cairo;
 }
 .maincont form input[type=text]::-webkit-input-placeholder {

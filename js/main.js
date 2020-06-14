@@ -361,7 +361,8 @@ jQuery(document).ready(function ($) {
         });
     }
 
-
+//  WOW Animation
+    new WOW().init();
 
 
     // Fancybox Images

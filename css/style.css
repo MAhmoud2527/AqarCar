@@ -6429,7 +6429,7 @@ PADDING IN MOBILE
 }
 .post-slider + .maincont,
 .post-img + .maincont {
-    margin-top: -40px;
+    margin-top: -240px;
     position: relative;
     z-index: 1;
 }
@@ -6600,7 +6600,8 @@ PADDING IN MOBILE
     font-size: 16px;
     color: #838e9d;
     width: 100%;
-    display: block;
+    display: block;  
+    font-family: cairo;
 }
 .post-comments-form textarea::-webkit-input-placeholder {
     color: #838e9d;
@@ -7536,6 +7537,7 @@ body .color-grey {
     border-bottom: 1px solid #e0e4f6;
     padding: 0 0 7px;
     margin: 0 0 10px;
+    text-align: justify;
 }
 .pricing-table .pricing-table-desc p:last-child {
     border-bottom: none;
@@ -7566,7 +7568,7 @@ body .color-grey {
 }
 .pricing-table.style_2 h3 {
     color: #fff;
-    background: #1d253f;
+    background: linear-gradient(45deg, #39cfbf, #83c7f6);
     font-size: 20px;
     margin: -1px -20px 24px;
     padding: 22px 19px 21px;
@@ -7583,7 +7585,7 @@ body .color-grey {
 .pricing-table.style_2 .pricing-table-desc {
     border-top: 1px solid #e0e4f6;
     padding-top: 13px;
-    margin: 0 0 22px;
+    margin: 0 9px 22px;
 }
 .pricing-table.style_2 .pricing-table-action {
     margin: 0 -20px -1px;
