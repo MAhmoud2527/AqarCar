@@ -7578,6 +7578,7 @@ body .color-grey {
 }
 .pricing-table.style_2 .pricing-table-price {
     margin: 0 0 25px;
+    font-family: cairo;
 }
 .pricing-table.style_2 .pricing-table-desc {
     border-top: 1px solid #e0e4f6;
