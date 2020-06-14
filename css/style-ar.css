@@ -2316,9 +2316,9 @@ input:focus {
 
 body .btn1 {
     border: none;
-    background-color: #ddd;
+    background-color: #87cefa;
     transition: background-color 0.2s;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 14px;
     color: #000;
     text-transform: uppercase;
@@ -2329,6 +2329,8 @@ body .btn1 {
     font-family: cairo;
     box-shadow: 0 6px 18px 0 rgba(66,88,176,0.2);
     text-decoration: none;
+    font-family: cairo;
+    transition: .4s all;
 }
 body .btn1:hover {
     color: #ffffff;
@@ -5615,7 +5617,7 @@ MENU 3
     left: 52%;
 }
 
-.prop-i .prop-i-top {
+.prop-i .prop-i-top ,.agent-i .prop-i-top {
     margin: 0 0 12px;
     position: relative;
     padding: 0 0px 0 40px;
@@ -5625,17 +5627,17 @@ MENU 3
     content: '';
     display: block;
 }
-.prop-i .prop-i-loc {
+.prop-i .prop-i-loc ,.agent-i .prop-i-loc {
     font-size: 16px;
     margin: 0;
     color: #87cefa;
 }
-.prop-i .prop-i-loc a {
+.prop-i .prop-i-loc a  ,.agent-i .prop-i-loc a {
     color: #87cefa;
     border-bottom: 1px solid transparent;
     transition: all 0.2s;
 }
-.prop-i .prop-i-loc a:hover {
+.prop-i .prop-i-loc a:hover ,.agent-i .prop-i-loc a:hover {
     border-color: #f3a249;
 }
 .prop-i .prop-i-moreinfo {
@@ -5759,17 +5761,17 @@ MENU 3
 .prop-i .prop-i-moreinfo ul .prop-i-agent-name a:hover {
     color: #f3a249;
 }
-.prop-i .prop-i-ttl {
+.prop-i .prop-i-ttl ,.agent-i .prop-i-ttl {
     margin: 0 0 11px;
     color: #1d253f;
     /* letter-spacing: 0.02em; */
     font-size: 22px;
 }
-.prop-i .prop-i-ttl a {
+.prop-i .prop-i-ttl a ,.agent-i .prop-i-ttl a{
     color: #1d253f;
     transition: color 0.2s;
 }
-.prop-i .prop-i-ttl a:hover {
+.prop-i .prop-i-ttl a:hover ,.agent-i .prop-i-ttl a:hover{
     color: #f3a249;
 }
 .prop-i .prop-i-rating {
@@ -7397,6 +7399,7 @@ PADDING IN MOBILE
 .agent-i .agent-i-contacts li a {
     color: #87cefa;
     transition: color 0.2s;
+    padding: 0 21px;
 }
 .agent-i .agent-i-contacts li a:hover {
     color: #f3a249;
@@ -7406,7 +7409,7 @@ PADDING IN MOBILE
     margin: -24px 0 0;
     position: absolute;
     width: 16px;
-    left: 0;
+    right: 0;
     top: 50%;
 }
 .agent-i .agent-i-contacts-ico img {
@@ -10706,7 +10709,7 @@ body .color-grey {
 
 /** 16 - Modalform **/
 
-.modalform {
+.modalform ,.modalform2 {
     font-size: 14px;
     background: #fff;
     width: 100%;
@@ -10717,7 +10720,7 @@ body .color-grey {
     border-radius: 3px;
     display: none;
 }
-.modalform .modalform-ttl {
+.modalform .modalform-ttl , .modalform2 .modalform-ttl{
     padding: 0 0 11px;
     font-weight: 700;
     color: #323946;
@@ -10727,7 +10730,7 @@ body .color-grey {
     letter-spacing: 0.02em;
     font-size: 25px;
 }
-.modalform input[type=text] {
+.modalform input[type=text] , .modalform2 input[type=text] {
     width: 100%;
     display: block;
     border-radius: 3px;
@@ -10742,17 +10745,17 @@ body .color-grey {
     font-family: cairo;
 
 }
-.modalform input[type=text]::-webkit-input-placeholder {
+.modalform input[type=text]::-webkit-input-placeholder , .modalform2 input[type=text]::-webkit-input-placeholder{
     color: #838e9d;
 }
-.modalform input[type=text]::-moz-placeholder {
+.modalform input[type=text]::-moz-placeholder  , .modalform2 input[type=text]::-moz-placeholder{
     color: #838e9d;
     opacity: 1;
 }
-.modalform input[type=text]:-ms-input-placeholder {
+.modalform input[type=text]:-ms-input-placeholder , .modalform2 input[type=text]::-moz-placeholder {
     color: #838e9d;
 }
-.modalform textarea {
+.modalform textarea , .modalform2 textarea{
     float: none;
     width: 100%;
     border-radius: 3px;
@@ -10771,23 +10774,23 @@ body .color-grey {
     padding: 14px 14px;
     font-size: 15px;
 }
-.modalform textarea::-webkit-input-placeholder {
+.modalform textarea::-webkit-input-placeholder ,.modalform2 textarea::-webkit-input-placeholder{
     color: #838e9d;
 }
-.modalform textarea::-moz-placeholder {
+.modalform textarea::-moz-placeholder , .modalform2 textarea::-moz-placeholder{
     color: #838e9d;
     opacity: 1;
 }
-.modalform textarea:-ms-input-placeholder {
+.modalform textarea:-ms-input-placeholder ,.modalform2 textarea:-ms-input-placeholder{
     color: #838e9d;
 }
-.modalform button[type=submit] {
+.modalform button[type=submit] , .modalform2 button[type=submit]{
     width: 100%;
 }
 .redborder {
     border-color: red !important;
 }
-.modalform .form-result {
+.modalform .form-result  , .modalform2.form-result {
     margin: 0;
 }
 .fancybox-close.modal-form-close {
@@ -12593,4 +12596,8 @@ input[type="file"] {
 }
 .about-list li h1{
     margin: 5px 0;
+}
+
+.post-cont .swiper-button-next{
+    margin: 0 0 0 515px;
 }

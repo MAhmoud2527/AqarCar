@@ -536,7 +536,21 @@ jQuery(document).ready(function ($) {
         });
     }
 
-
+    // Modal Form
+    if ($('.modalform-btn2').length) {
+        $('.modalform-btn2').fancybox({
+            content: $('.modalform2'),
+            padding: 0,
+            helpers: {
+                overlay: {
+                    locked: false
+                }
+            },
+            tpl: {
+                closeBtn: '<a title="Close" class="fancybox-item fancybox-close modal-form-close" href="javascript:;"></a>'
+            }
+        });
+    }
 
     // Forms Validation
     var filterEmail  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,6})+$/;
