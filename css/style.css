@@ -7546,7 +7546,7 @@ body .color-grey {
     color: #ffffff;
     text-transform: uppercase;
     display: block;
-    background-color: #f3a249;
+    background-color: #87cefa;
     margin: 0 -15px;
     border-radius: 3px;
     padding: 14px 15px 15px;
@@ -8018,7 +8018,7 @@ body .color-grey {
     border: none;
 }
 .iconblock-list .iconblock-i .iconblock-i-ttl a:hover {
-    color: #f3a249;
+    color: #87cefa;
 }
 
 @media only screen and (max-width : 991px) {
@@ -8257,7 +8257,7 @@ body .color-grey {
     color: #87cefa;
 }
 .team-i h3 a:hover {
-    color: #f3a249;
+    color: #87cefa;
 }
 .team-i .team-i-position {
     color: #747f8f;
@@ -9125,15 +9125,15 @@ body .color-grey {
     transition: border-color 0.2s;
 }
 .err404 form button:hover {
-    background-color: #f3a249;
+    background-color: #87cefa;
 }
 .err404 form button:hover:after {
-    border-left: 10px solid #f3a249;
-    border-top: 20px solid #f3a249;
+    border-left: 10px solid #87cefa;
+    border-top: 20px solid #87cefa;
 }
 .err404 form button:hover:before {
-    border-right: 10px solid #f3a249;
-    border-bottom: 20px solid #f3a249;
+    border-right: 10px solid #87cefa;
+    border-bottom: 20px solid #87cefa;
 }
 
 

@@ -9338,7 +9338,7 @@ body .color-grey {
     color: #ffffff;
     text-transform: uppercase;
     display: block;
-    background-color: #f3a249;
+    background-color:  #87cefa;
     margin: 0 -15px;
     border-radius: 3px;
     padding: 14px 15px 15px;
@@ -9813,7 +9813,7 @@ body .color-grey {
     border: none;
 }
 .iconblock-list .iconblock-i .iconblock-i-ttl a:hover {
-    color: #f3a249;
+    color:  #87cefa;
 }
 
 @media only screen and (max-width : 991px) {
@@ -10052,7 +10052,7 @@ body .color-grey {
     color: #87cefa;
 }
 .team-i h3 a:hover {
-    color: #f3a249;
+    color:  #87cefa;
 }
 .team-i .team-i-position {
     color: #747f8f;
