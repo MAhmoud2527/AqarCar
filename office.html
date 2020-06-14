@@ -58,10 +58,10 @@
                             <a href="#">حلول تسويقيه</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">حاسبة التمويل العقارى</a>
+                            <a href="estateCalculator.html">حاسبة التمويل العقارى</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">المكاتب والمعارض</a>
+                            <a href="office.html">المكاتب والمعارض</a>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="#">اخري</a>
@@ -141,10 +141,10 @@
                             <a href="#">حلول تسويقيه</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">حاسبة التمويل العقارى</a>
+                            <a href="estateCalculator.html">حاسبة التمويل العقارى</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#">المكاتب والمعارض</a>
+                            <a href="office.html">المكاتب والمعارض</a>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="" style="padding-top: 2px; padding-bottom: 2px;">أخرى <i class="fa fa-caret-down"></i></a>
@@ -181,8 +181,14 @@
             </div>
             <div class="row prop-grid">
                <!-- Here -->
-               <div class="col-sm-4 f-callback">
+               <div class="col-sm-3 f-callback">
                 <button class="modalform-btn2 btn1"> أضف مكتب/ معرض جديد </button>
+            </div>
+            <div class="col-sm-8">
+                <form action="#">
+                    <input type="text" placeholder="ابحث هنا....">
+                    <button type="submit">بحث</button>
+                </form>
             </div>
             </div>
 
@@ -299,7 +305,9 @@
             <div class="modalform2">
                 <form action="#" method="POST" class="form-validate">
                     <p class="modalform-ttl">أضف مكتب جديد </p>
-                    <input type="text" placeholder="الاسم" data-required="text" name="name">
+                    <input type="text" placeholder="اسم المكتب" data-required="text" name="name">
+                    <input type="text" placeholder=" النشاط" data-required="text" name="role">
+                    <input type="text" placeholder=" المنطقة" data-required="text" name="area">
                     <input type="text" placeholder="رقم الجوال" data-required="text" name="phone">
                     <input type="text" placeholder="الايميل" data-required="text" data-required-email="email" name="email">
                     <textarea  placeholder="ضع رسالتك هنا" data-required="text"  name="message"></textarea>

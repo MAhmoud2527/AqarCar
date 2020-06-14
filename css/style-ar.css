@@ -12601,3 +12601,105 @@ input[type="file"] {
 .post-cont .swiper-button-next{
     margin: 0 0 0 515px;
 }
+
+ .maincont form {
+    margin: 0 auto 70px;
+    position: relative;
+    /* max-width: 480px; */
+}
+.maincont  form input[type=text] {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e1e5ee;
+    transition: border-color 0.2s;
+    font-size: 16px;
+    color: #838e9d;
+    padding: 0;
+    padding-right: 10px;
+    height: 40px;
+    text-align: right;
+    font-family: cairo;
+}
+.maincont form input[type=text]::-webkit-input-placeholder {
+    color: #838e9d;
+}
+.maincont form input[type=text]::-moz-placeholder {
+    color: #838e9d;
+    opacity: 1;
+}
+.maincont form input[type=text]:-ms-input-placeholder {
+    color: #838e9d;
+}
+.maincont form input[type=text]:focus {
+    border-color: #d5d9e0;
+}
+.maincont form button {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 15px;
+    min-width: 120px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    background-color: #87cefa;
+    border: none;
+    height: 40px;
+    font-family: cairo;
+}
+.maincont form button:before {
+    display: block;
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: -20px;
+    border-right: 10px solid #87cefa;
+    border-bottom: 20px solid #87cefa;
+    border-left: 10px solid transparent;
+    border-top: 20px solid transparent;
+    transition: border-color 0.2s;
+}
+.maincont form button:after {
+    display: block;
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: -20px;
+    border-left: 10px solid #87cefa;
+    border-top: 20px solid #87cefa;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid transparent;
+    transition: border-color 0.2s;
+}
+.maincont form button:hover {
+    background-color: #87cefa;
+}
+.maincont form button:hover:after {
+    border-left: 10px solid #87cefa;
+    border-top: 20px solid #87cefa;
+}
+.maincont form button:hover:before {
+    border-right: 10px solid #87cefa;
+    border-bottom: 20px solid #87cefa;
+}
+
+
+@media only screen and (max-width : 479px) {
+    .maincont form input[type=text] {
+        margin: 0 0 20px;
+    }
+    .maincont form button {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left:  auto;
+        margin: 0 auto;
+    }
+}
