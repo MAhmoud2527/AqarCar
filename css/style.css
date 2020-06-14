@@ -10908,7 +10908,7 @@ input[type="file"] {
         margin: 0 auto;
     }
 }
-.login100-form input, .login100-form button , .login100-form .txt1 , .login100-form .txt2{
+.login100-form input, .login100-form a , .login100-form .txt1 , .login100-form .txt2{
     font-family: cairo;
 }
 .login100-form .txt1 , .login100-form .txt2{
