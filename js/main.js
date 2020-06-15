@@ -552,6 +552,22 @@ jQuery(document).ready(function ($) {
             }
         });
     }
+        // Modal Form
+        if ($('.modalform-btn3').length) {
+            $('.modalform-btn3').fancybox({
+                content: $('.modalform3'),
+                padding: 0,
+                helpers: {
+                    overlay: {
+                        locked: false
+                    }
+                },
+                tpl: {
+                    closeBtn: '<a title="Close" class="fancybox-item fancybox-close modal-form-close" href="javascript:;"></a>'
+                }
+            });
+        }
+        $("input[name='expiry-data']").mask("00 / 00");
 
     // Forms Validation
     var filterEmail  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,6})+$/;

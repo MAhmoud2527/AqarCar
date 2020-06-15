@@ -176,12 +176,13 @@
 
         <div class="container maincont">
 
-            <div class="mainttl-wrap" style="padding-left:0">
+            <div class="mainttl-wrap wow flipInX" style="padding-left:0">
                 <h1 class="mainttl"><span>خطط <b>الاسعار </b></span></h1>
                
             </div>
             <div class="row prop-grid">
                <!-- Here -->
+               
                <div class="cont-boxed">
                 <div class="row">
                     <div class="cf-lg-4 col-sm-12 col-md-4 wow slideInRight" data-wow-duration="1.2s">
@@ -195,7 +196,7 @@
                                 </p>
                                 
                             </div>
-                            <a href="#" class="pricing-table-action">اطلب الان</a>
+                            <a href="#" class="pricing-table-action modalform-btn3">اطلب الان</a>
                         </div>
                     </div>
                     <div class="cf-lg-4 col-sm-12 col-md-4 wow slideInUp" data-wow-duration="1.2s">
@@ -209,7 +210,7 @@
                                 </p>
                                
                             </div>
-                            <a href="#" class="pricing-table-action">اطلب الان</a>
+                            <a href="#" class="pricing-table-action modalform-btn3">اطلب الان</a>
                         </div>
                     </div>
                     <div class="cf-lg-4 col-sm-12 col-md-4 wow slideInLeft" data-wow-duration="1.2s">
@@ -223,7 +224,7 @@
                                 </p>
                                 
                             </div>
-                            <a href="#" class="pricing-table-action">اطلب الان</a>
+                            <a href="#" class="pricing-table-action modalform-btn3">اطلب الان</a>
                         </div>
                     </div>
                 </div>
@@ -242,6 +243,67 @@
                     <input type="text" placeholder="الايميل" data-required="text" data-required-email="email" name="email">
                     <textarea  placeholder="ضع رسالتك هنا" data-required="text"  name="message"></textarea>
                     <button class="btn1" type="submit">ارسال</button>
+                </form>
+            </div>
+            <div class="modalform3">
+                <form action="#" method="POST" class="form-validate">
+                    <p class="modalform-ttl">أضافة بطاقة ائتمان</p>
+                    <div class="wrapper">
+                        <div class="payment">
+                          <div class="form">
+                              <div class="row">
+                                  <div class="col-sm-6">
+                                    <img src="img/master.png"/>
+                                    <div class="radio-input">
+                                        <input id="card" type="radio" name="payment">
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <img src="img/visa.png"/>
+                                    <div class="radio-input">
+                                        <input id="paypal" type="radio" name="payment">
+                                      </div>
+                                  </div>
+                              </div>
+                            <div class="card space icon-relative">
+                              <label class="label">الاسم</label>
+                              <input type="text" class="input" placeholder="الاسم">
+                              <i class="fa fa-user"></i>
+                            </div>
+                            <div class="card space icon-relative">
+                              <label class="label">رقم البطاقة</label>
+                              <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="رقم البطاقة">
+                              <i class="fa fa-credit-card"></i>
+                            </div>
+                            <div class="card-grp ">
+                              <div class="card-item icon-relative">
+                                <label class="label">تاريخ الانتهاء</label>
+                                <input type="text" name="expiry-data" class="input"  placeholder="00 / 00">
+                                <i class="fa fa-calendar"></i>
+                              </div>
+                              <div class="card-item icon-relative">
+                                <label class="label">CVC:</label>
+                                <input type="text" class="input" data-mask="000" placeholder="000">
+                                <i class="fa fa-lock"></i>
+                              </div>
+                            </div>
+                            <div class="card space icon-relative .payment .space">
+                                <label>
+                                    <input type="checkbox" checked="checked" name="sameadr"> أوافق على الشروط والاحكام
+                                </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                   <div class="row">
+                       <div class="col-md-6">
+                        <button class="btn1" type="submit"> أضافة</button>
+                       </div>
+                       <div class="col-md-6">
+                        <button class="btn3 " type="submit" href="javascript:;" onclick="$.fancybox.close();">الغاء</button>
+
+                       </div>
+                   </div>
                 </form>
             </div>
             
@@ -315,6 +377,7 @@
 
         <script src="js/jquery-1.12.3.min.js"></script>
         <!-- jQuery UI - DatePicker -->
+        <script src="https://www.jqueryscript.net/demo/Input-Field-Data-Formatting-Plugin-Mask/jquery.mask.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/swiper.jquery.min.js"></script>
         <script src="js/chosen.jquery.min.js"></script>
@@ -326,7 +389,6 @@
         <script src="js/isotope.min.js"></script>
         <script src="assets/vendor/wow/wow.min.js"></script>
         <script src="js/main.js"></script>
-
     </body>
 
 </html>

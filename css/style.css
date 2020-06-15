@@ -6433,7 +6433,7 @@ PADDING IN MOBILE
 .post-img + .maincont {
     margin-top: -240px;
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
 }
 .post-top:after {
     clear: both;
@@ -8935,9 +8935,7 @@ body .color-grey {
 
 /** 16 - Modalform **/
 
-/** 16 - Modalform **/
-
-.modalform ,.modalform2 {
+.modalform ,.modalform2 ,.modalform3 {
     font-size: 14px;
     background: #fff;
     width: 100%;
@@ -8948,7 +8946,7 @@ body .color-grey {
     border-radius: 3px;
     display: none;
 }
-.modalform .modalform-ttl , .modalform2 .modalform-ttl{
+.modalform .modalform-ttl , .modalform2 .modalform-ttl , .modalform3 .modalform-ttl{
     padding: 0 0 11px;
     font-weight: 700;
     color: #323946;
@@ -8958,7 +8956,7 @@ body .color-grey {
     letter-spacing: 0.02em;
     font-size: 25px;
 }
-.modalform input[type=text] , .modalform2 input[type=text] {
+.modalform input[type=text] , .modalform2 input[type=text] , .modalform3 input[type=text] {
     width: 100%;
     display: block;
     border-radius: 3px;
@@ -8973,17 +8971,17 @@ body .color-grey {
     font-family: cairo;
 
 }
-.modalform input[type=text]::-webkit-input-placeholder , .modalform2 input[type=text]::-webkit-input-placeholder{
+.modalform input[type=text]::-webkit-input-placeholder , .modalform2 input[type=text]::-webkit-input-placeholder, .modalform36 input[type=text]::-webkit-input-placeholder{
     color: #838e9d;
 }
-.modalform input[type=text]::-moz-placeholder  , .modalform2 input[type=text]::-moz-placeholder{
+.modalform input[type=text]::-moz-placeholder  , .modalform2 input[type=text]::-moz-placeholder , .modalform3 input[type=text]::-moz-placeholder{
     color: #838e9d;
     opacity: 1;
 }
-.modalform input[type=text]:-ms-input-placeholder , .modalform2 input[type=text]::-moz-placeholder {
+.modalform input[type=text]:-ms-input-placeholder , .modalform2 input[type=text]::-moz-placeholder  ,.modalform3 input[type=text]::-moz-placeholder{
     color: #838e9d;
 }
-.modalform textarea, .modalform2 textarea{
+.modalform textarea , .modalform2 textarea , .modalform3 textarea{
     float: none;
     width: 100%;
     border-radius: 3px;
@@ -9002,23 +9000,23 @@ body .color-grey {
     padding: 14px 14px;
     font-size: 15px;
 }
-.modalform textarea::-webkit-input-placeholder ,.modalform2 textarea::-webkit-input-placeholder{
+.modalform textarea::-webkit-input-placeholder ,.modalform2 textarea::-webkit-input-placeholder,.modalform3 textarea::-webkit-input-placeholder{
     color: #838e9d;
 }
-.modalform textarea::-moz-placeholder , .modalform2 textarea::-moz-placeholder{
+.modalform textarea::-moz-placeholder , .modalform2 textarea::-moz-placeholder, .modalform3 textarea::-moz-placeholder{
     color: #838e9d;
     opacity: 1;
 }
-.modalform textarea:-ms-input-placeholder ,.modalform2 textarea:-ms-input-placeholder{
+.modalform textarea:-ms-input-placeholder ,.modalform2 textarea:-ms-input-placeholder,.modalform3 textarea:-ms-input-placeholder{
     color: #838e9d;
 }
-.modalform button[type=submit] , .modalform2 button[type=submit]{
+.modalform button[type=submit] , .modalform2 button[type=submit] , .modalform3 button[type=submit] {
     width: 100%;
 }
 .redborder {
     border-color: red !important;
 }
-.modalform .form-result  , .modalform2.form-result {
+.modalform .form-result  , .modalform2.form-result , .modalform3.form-result{
     margin: 0;
 }
 .fancybox-close.modal-form-close {
@@ -9030,7 +9028,6 @@ body .color-grey {
     right: 14px;
 }
 /** 16 - Modalform **/
-
 
 /** 17 - Error 404 **/
 .err404 {
@@ -10923,4 +10920,158 @@ input[type="file"] {
 .login100-form-title{
     font-family: cairo;
     font-size: 26px;
+}
+
+
+
+.payment{
+    /* background: #f8f8f8;
+    max-width: 360px;
+    margin: 80px auto;
+    height: auto;
+    padding: 35px; */
+    padding-top: 15px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .payment h2{
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    color: #0d3c61;
+  }
+  
+  .payment .form .label{
+    display: block;
+    color: #555555;
+    margin-bottom: 6px;
+  }
+  
+  .payment .input{
+    padding: 13px 0px 13px 25px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    outline: none;
+    font-size: 16px;
+    color: #555555;
+  }
+  
+  .payment .card-grp{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .payment .card-item{
+    width: 48%;
+  }
+  
+  .payment .space{
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .payment .icon-relative{
+    position: relative;
+  }
+  
+  .payment .icon-relative .fa,
+  .payment .icon-relative .fa{
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    font-size: 16px;
+    color: #555555;
+  }
+  
+  .payment .btn{
+    margin-top: 40px;
+    background: #2196F3;
+    padding: 12px;
+    text-align: center;
+    color: #f8f8f8;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  .payment .payment-logo{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background: #f8f8f8;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    text-align: center;
+    line-height: 85px;
+  }
+  
+  .payment .payment-logo:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
+    background: #2196F3;
+    border-radius: 50%;
+  }
+  
+  .payment .payment-logo p{
+    position: relative;
+    color: #f8f8f8;
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-size: 58px;
+  }
+  
+  .payment .fa-lock , .payment .fa-calendar{
+      bottom: 31px!important;
+  }
+  @media screen and (max-width: 420px){
+    .payment .card-grp{
+      flex-direction: column;
+    }
+    .payment .card-item{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .payment .btn{
+      margin-top: 20px;
+    }
+  }
+  
+body .btn3 {
+    border: none;
+    background-color: #2b3558;
+    transition: background-color 0.2s;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 37px;
+    font-family: cairo;
+    box-shadow: 0 6px 18px 0 rgba(66,88,176,0.2);
+    text-decoration: none;
+    font-family: cairo;
+    transition: .4s all;
+}
+body .btn3:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #2b3558;
+}
+.payment img{
+    max-height: 45px;
+    min-height: 45px;
+    width: 61%;
 }
