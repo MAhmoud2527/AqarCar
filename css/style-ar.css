@@ -2205,6 +2205,12 @@ input:focus {
     font-weight: 700;
     margin-top: 10px;
     display: inline-block;
+    line-height: 1.9;
+    font-weight: 700;
+    margin-top: 10px;
+    background: lightskyblue;
+    display: inline-block;
+    padding: 15px;
 }
 .stylization .wpcf7 span.wpcf7-not-valid-tip {
     display: none;
@@ -12882,7 +12888,85 @@ body .btn3:hover {
     min-height: 45px;
     width: 61%;
 }
-   
-.maincont .post-comments-wrap form button{
+.stylization .maincont form input[type=text]{
+    border: 1px solid #e0e4f6!important;
+} 
+.stylization .maincont .post-comments-wrap form button{
     left: 0!important;
+}
+.stylization .login-form {
+    display: none;
+  }
+  .stylization .login-button-container {
+    margin: 32px -15px;
+}
+.stylization .sign-in {
+    padding-left: 30PX;
+}
+.stylization .register {
+    padding-right: 30PX;
+}
+.stylization .sign-in__button, .stylization .register__button {
+    background-color: #000;
+    border: 1px solid lightskyblue !important;
+    display: block;
+    min-height: 60px;
+    width: 100%;
+    font-family: cairo;
+}
+.stylization .sign-in__button:hover, .stylization .register__button:hover {
+    background: none;
+    border: 1px solid #ccc;
+    color: #000;
+}
+.stylization .sign-in__button:focus, .stylization.register__button:focus, .stylization .sign-in__button.focus, .stylization .register__button.focus {
+    outline: 3px solid orange !important;
+}
+.stylization .sign-in__button:active, .stylization .register__button:active, .stylization .sign-in__button.active,.stylization .register__button.active {
+    background-color: lightskyblue ;
+    border: 1px solid pink;
+    box-shadow: none;
+}
+.stylization .hidden_clip {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+}
+.stylization .text-input__field {
+    border: 0;
+    display: block;
+    font-size: 16px;
+    height: 60px;
+    outline: 1px solid #ccc;
+    padding: 18px;
+    width: 100%;
+}
+.stylization .text-input__field:focus, .stylization .text-input__field.focus {
+    outline: 3px solid orange;
+}
+.stylization .text-input__field:active, .stylization .text-input__field.active {
+    outline: 1px solid black;
+}
+.form__field__wrapper label{
+    padding: 10px 0;
+}
+.stylization input[type=text]{
+    border: 1px solid #e1e5ee!important;
+    background: none!important;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}  
+.aqar button {
+    position: relative!important;
+    margin: 0px auto;
+
 }
