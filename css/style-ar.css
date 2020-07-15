@@ -12970,3 +12970,22 @@ input[type="file"] {
     margin: 0px auto;
 
 }
+
+/* New */
+.mainmenu3 > ul > li  i{
+    font-size: 25px;
+    transition: color 0.2s;
+    text-align: center;
+    display: block;
+}
+.mainmenu3 > ul > li:hover{
+    color: #87cefa;
+}
+.submenu1 > ul > li ul > li > a{
+    text-align: right;
+}
+@media only screen and (max-width: 1449px){
+.mainmenu3 > ul > li {
+    margin: 12px 5px;
+}
+}

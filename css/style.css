@@ -11127,3 +11127,7 @@ body .btn3:hover {
 .text-input__label{
     margin: 20px 0;
 }
+
+.mainmenu3 > ul > li > a i{
+    font-size: 20px;
+}
