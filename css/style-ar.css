@@ -12984,6 +12984,13 @@ input[type="file"] {
 .submenu1 > ul > li ul > li > a{
     text-align: right;
 }
+.dropdown-content a{
+    padding: 12px 13px 10px 5px;
+    text-align: right;
+}
+.dropdown-content{
+    min-width: max-content;
+}
 @media only screen and (max-width: 1449px){
 .mainmenu3 > ul > li {
     margin: 12px 5px;
